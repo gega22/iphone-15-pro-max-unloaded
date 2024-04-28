@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-color: black;
+}
+.img1 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+.about1{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    color: gray;
+}
+.about2{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    color: gray;
+}
+.pro{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+.explore3{
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.txt1{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: gray;
+}
+.txt2{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.container {
+    position: relative;
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 765px; /* Set width to 50px */
+    height: 350px; /* Maintain aspect ratio */
+    transform: translate(-50%, -50%); /* Center the background image */
+    z-index: -1; /* Ensure the background image is behind other content */
+    background-image: url('8d2e398f2a6328f6eb14ccc2529afb29_9165380039360078834.gif'); /* URL of the background image */
+    background-size: cover; /* Adjust to fit container */
+    background-position: center; /* Center the background image */
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: lightgrey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .disppear{
+    animation: vanish 1s forwards;
+    animation-delay: 1.5s;
+  }
+  @keyframes vanish {
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .imgchip{
+    height: 400px;
+  }
+  button {
+    background-color: #333333; /* Dark gray for base */
+    border: none;
+    color: #fff; /* White text */
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  button:hover {
+    background-color: #555555; /* Darker gray on hover */
+  }
